@@ -1,0 +1,48 @@
+Krishna Patil
+Pachora, Maharashtra, India
+Phone+91 9850159631 Envelope202krishnapatil@gmail.com
+LINKEDINLinkedIn GithubGitHub GLOBEPortfolio
+Professional Summary
+Results-driven BCA student specializing in Computational Science with hands-on experience in software development,
+Artificial Intelligence, and Machine Learning. Proven ability to design, engineer, and deploy scalable applications backed
+by data-driven models. Seeking an entry-level software development or AI/ML role to contribute to impactful, production-
+ready solutions.
+Internship
+AI & Machine Learning Intern Dec 2025
+iBase Electrosoft LLP (150 Hours – One Month)
+• Gained industry exposure to Artificial Intelligence and Machine Learning through structured training
+• Solved real-world problem statements using supervised learning techniques
+• Applied ML workflows including data preprocessing, model training, and evaluation
+• Demonstrated strong ownership, fast learning ability, and consistent task execution
+Technical Skills
+Programming: Python, Java, C++
+W eb & Backend: Django, Flask, React, Node.js, REST APIs
+AI / ML: TensorFlow, PyTorch, Scikit-learn, NLP, Computer Vision
+Databases: MySQL, PostgreSQL, MongoDB
+Cloud & DevOps: A WS, Azure, GCP, Docker, Kubernetes, Git, CI/CD
+Concepts: MLOps, Generative AI, Agile/Scrum, Linux
+Projects
+F ake Reviews Identification System | Source Code | Live
+• Engineered an ML-based fraud detection system achieving 95% classification accuracy
+• Applied sentiment analysis and behavioral pattern modeling to identify fake reviews
+• Analyzed and processed 100,000+ reviews with real-time inference capability
+AI Medical Consultancy System (Internship Project) | Source Code | Live
+• Designed an AI-driven medical consultancy platform for preliminary health assessment
+• Trained symptom-based disease prediction models using supervised learning algorithms
+• Delivered real-time predictions with average response time under 2 seconds
+• Deployed the application on cloud infrastructure for public accessibility
+BashaConverter (Company Project) | Source Code | Live
+• Built a multilingual language translation system leveraging NLP and ML algorithms
+• Improved cross-cultural communication efficiency by 40% through optimized processing
+AI Desktop Assistant – Kirito 1.0 | Source Code
+• Architected an AI-powered desktop assistant enabling voice-based interaction and automation
+• Integrated speech recognition, text-to-speech, and NLP pipelines for command execution
+• Automated system-level operations including application control, file handling, and web search
+• Connected external APIs to fetch real-time data such as weather, news, and user queries
+Education
+Bachelor of Computer Applications (BCA) | Expected 2026
+G. H. Raisoni Institute of Engineering, Jalgaon
+Achievements:
+• Shark Tank Winner – 1st Prize (2025)
+• Shark Tank Runner-up – 2nd Prize (2024)
+
