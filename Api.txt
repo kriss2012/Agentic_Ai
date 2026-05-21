@@ -1,0 +1,15 @@
+Exchange rate
+Your API Key: eaae734f553f3c4e9b1c375e
+Gemini_Api_Key= AIzaSyBVtgqYqgv7YEKzhds_vUjeRACgtMr1slQ
+
+Groq_Api_Key= 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
+
+Serp_Api_Key=b7dd3615381d6c70c066e29a6bf14c4d18db87c789ae753688299f53de9e98bc
+
+WeatherStack_Api_Key=80998559a20d5c547a3196302c7ac72e
+
+
+
+
+python -m venv .venv
+.venv\Scripts\activate
