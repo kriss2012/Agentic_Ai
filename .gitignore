@@ -3,3 +3,4 @@
 __pycache__/
 rag_chroma_db/
 .env
+.env
