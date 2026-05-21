@@ -2,5 +2,4 @@
 .krish/
 __pycache__/
 rag_chroma_db/
-.env
-.env
+twin_chroma_db/
