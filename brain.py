@@ -36,21 +36,20 @@ def process_pdf(file_path: str):
     print(f'document has been split into: {len(splits)}chunks')
 
     return splits
-    
-    process_pdf("scholarship_info.pdf")
 
-def generate_and_Store_embeddings():
+def generate_and_store_embeddings():
     splits = process_pdf("./scholarship_info.pdf")
 
     embeddings = GoogleGenerativeAIEmbeddings(
-        model = "models/gemini-embedding-001"
+        model="models/gemini-embedding-001"
     )
 
     vector_store = Chroma(
-    embedding_function=embeddings,
-    persist_directory='rag_chroma_db',
-    collection_name='scholarship_info'
-)
-vector_store.add_documents(splits)\
-def generate_and_store_embeddings():
+        embedding_function=embeddings,
+        persist_directory='rag_chroma_db',
+        collection_name='scholarship_info'
+    )
+    vector_store.add_documents(splits)
 
+if __name__ == "__main__":
+    generate_and_store_embeddings()
