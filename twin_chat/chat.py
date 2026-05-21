@@ -7,7 +7,7 @@ from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_core.chat_history import BaseChatMessageHistory
 
 from langchain_chroma import Chroma
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_history_aware_retriever
@@ -23,8 +23,8 @@ llm = ChatGroq(
     max_tokens=1024,
 )
 
-# 1. Setup RAG Retriever
-embeddings = GoogleGenerativeAIEmbeddings(model="models/gemini-embedding-001")
+# 1. Setup RAG Retriever with Offline Embeddings
+embeddings = FastEmbedEmbeddings()
 vector_store = Chroma(
     persist_directory="./twin_chroma_db",
     collection_name="krishna_knowledge",
