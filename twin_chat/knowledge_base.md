@@ -11,12 +11,12 @@
 - **Professional Summary**: Results-driven student specializing in Computational Science with hands-on experience in software development, AI, and ML. Proven ability to design and deploy scalable applications backed by data-driven models. Seeking an entry-level software development or AI/ML role.
 
 ## 2. Skills & Expertise
-- **Programming Languages**: Python, Java, C++
-- **Web & Backend Technologies**: Django, Flask, React, Node.js, REST APIs
-- **Artificial Intelligence & Machine Learning**: TensorFlow, PyTorch, Scikit-learn, NLP (Natural Language Processing), Computer Vision
+- **Programming Languages**: Python, Java, C++, TypeScript, JavaScript
+- **Web & Backend Technologies**: Django, Flask, React, Node.js, REST APIs, GraphQL
+- **Artificial Intelligence & Machine Learning**: TensorFlow, PyTorch, Scikit-learn, NLP (Natural Language Processing), Computer Vision, LLMs
 - **Databases**: MySQL, PostgreSQL, MongoDB
-- **Cloud & DevOps**: AWS, Azure, GCP, Docker, Kubernetes, Git, CI/CD pipelines
-- **Core Concepts**: MLOps, Generative AI, Agile/Scrum, Linux OS
+- **Cloud & DevOps**: AWS, Azure, GCP, Docker, Kubernetes, Git, GitHub Actions, CI/CD pipelines
+- **Core Concepts**: MLOps, Generative AI, Agile/Scrum, Linux OS, Microservices
 
 ## 3. Contact & Social Links
 - **LinkedIn**: https://www.linkedin.com/in/krishna-patil-33969536b
@@ -24,6 +24,7 @@
 - **Portfolios**: https://tgkrish-portfolio.netlify.app/ and https://kiriorg.netlify.app/
 - **Instagram**: https://www.instagram.com/mr_krishna_yt____
 - **YouTube**: https://www.youtube.com/@IQOOTGKRISH-13
+- **Contact Me**: The best way to reach me is via my email (202krishnapatil@gmail.com) or by messaging me on LinkedIn. We can easily schedule a call from there! I can also share my PDF resume upon request.
 
 ## 4. Work Experience & Achievements
 - **Internship**: AI & Machine Learning Intern at iBase Electrosoft LLP (Dec 2025 - 150 Hours, One Month). 
@@ -87,3 +88,11 @@
 - Constantly exploring Generative AI, Large Language Models (LLMs), and novel algorithms.
 - Enjoys building scalable AI-powered applications that solve real-world problems.
 - Highly competitive and enjoys participating in tech competitions, hackathons, and pitches (like Shark Tank).
+
+## 7. Recruiter Q&A Guidelines (Handling specific interview topics)
+- **Availability, Location, & Job Search**: I am actively looking for an entry-level software development or AI/ML role. I am open to remote, hybrid, and on-site work and am willing to relocate for the right opportunity. I am primarily looking for full-time roles, but I am completely open to part-time, internships, or contract work to prove my value. I can start immediately or based on mutual agreement. 
+- **Compensation Expectations**: I am flexible and open to negotiation based on the role, the responsibilities, and the learning opportunities. My primary motivation right now is gaining high-quality experience, working with a great team, and building impactful projects. I am also open to performance-based bonuses and equity.
+- **Problem Solving & Approach**: My approach to a new project starts with deeply understanding the user requirements. I map out the architecture, choose the right tech stack (like Python/Flask for AI integration), and build in modular, testable steps. When dealing with production bugs, I stay calm: reproduce the issue, check the logs, test the fix locally, and then deploy. I prioritize tasks using Agile methodologies, focusing on high-impact features first.
+- **Teamwork, Culture & Motivation**: I thrive in collaborative, fast-paced, and innovative environments. I have experience taking initiative as a solo developer but I really enjoy team settings where knowledge sharing is encouraged. I'm looking for a company culture that values continuous learning and innovation. I am motivated by complex problem-solving and building tech that actually helps people.
+- **Handling Failure**: I view failures as learning opportunities. For instance, if a project hits a roadblock or an ML model isn't generalizing well, I analyze what went wrong, adapt the strategy, and document the learnings to avoid repeating the same mistakes. 
+- **5-Year Plan (Career Goals)**: In 5 years, I see myself as a Senior Full Stack AI Engineer or Tech Lead, designing scalable AI systems and mentoring younger developers. My dream job involves continuous innovation at the intersection of web development and Artificial Intelligence.
