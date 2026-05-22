@@ -285,3 +285,15 @@ Guided Prompts: Don't just leave an empty text box. Give visitors clickable sugg
 "What are you currently studying?"
 
 By feeding the RAG pipeline your specific project architectures and academic background, you guarantee that when a recruiter asks, "What is your experience with React?", the bot won't give a generic definition of React. It will actually pull up the exact details of the web apps you've built.
+
+
+
+
+
+
+
+
+
+answer of the agent responce given above:
+
+'weather_descriptions': ['Sunny'], 'astro': {'sunrise': '05:49 AM', 'sunset': '07:02 PM', 'moonrise': '11:17 AM', 'moonset': 'No moonset', 'moon_phase': 'Waxing Crescent', 'moon_illumination': ', tool_call_id='4wcf285dq', AIMessage(content='The current weather in Pachora is sunny with a temperature of 37 degrees Celsius.'),}
