@@ -98,4 +98,4 @@ def get_weather(city:str) -> str:
     result = requests.get(url).json()
     return str(result)
 
-print(get_weather.invoke("Pachora"))
+print(get_weather.invoke({"city":"Pachora"}))
