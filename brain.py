@@ -5,7 +5,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
-from landchain_classic.chains import RetrieverQA
+from langchain_classic.chains import RetrievalQA
 
 load_dotenv()
 
@@ -51,7 +51,7 @@ def generate_and_store_embeddings():
         collection_name='scholarship_info'
     )
 
-        vector_store.add_documents(splits)
+    vector_store.add_documents(splits)
 
     def create_retretriever():
         embeddings = GoogleGenerativeAIEmbeddings(
@@ -85,6 +85,8 @@ def create_rag_chain(prompt:str):
         return_source_documents=True,
     )
 
-    return rag_chain
+    rag_chain.invoke({"query":prompt})
+    return response['result']
+create_rag_chain("What is the eligibility for this scholarship?")
 #if __name__ == "__main__":
    # generate_and_store_embeddings()
