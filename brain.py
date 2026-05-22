@@ -108,3 +108,17 @@ def run_agent():
     search_tool = DuckDuckGoSearchRun()
 
     tools = [get_weather, search_tool]
+
+    client = Client()
+
+    prompt = client.pull_prompt("hwchase17/react", dangeously_pull_public_prompt=True)
+    
+    prompt = prompt.template
+
+    agent = create_agent(
+        model=llm,
+        tools=tools,
+        system_prompt=prompt,
+    )
+    response = agent.invoke({"messages": [{"role":"user",content:"what is the current weather in pachora"}]})
+print(response)    
