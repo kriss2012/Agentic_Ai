@@ -7,6 +7,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_classic.chains import RetrievalQA
 from langchain_community.tools import tool, DuckDuckGoSearchRun
+from langchain_classic.agents import create_agent
+from langsmith import Client
 import requests
 load_dotenv()
 
@@ -104,4 +106,5 @@ print(get_weather.invoke({"city":"Pachora"}))
 def run_agent():
     llm = get_llm()
     search_tool = DuckDuckGoSearchRun()
-    
+
+    tools = [get_weather, search_tool]
