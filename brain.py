@@ -72,6 +72,6 @@ def get_llm(model="llama-3.1-8b-instant"):
         max_tokens=256
     )
 
-return llm
+    return llm
 #if __name__ == "__main__":
    # generate_and_store_embeddings()
