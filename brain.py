@@ -50,6 +50,18 @@ def generate_and_store_embeddings():
         collection_name='scholarship_info'
     )
     vector_store.add_documents(splits)
+    def create_retriever():
+        embeddings = GoogleGenerativeAIEmbeddings(
+            model="models/gemini-embedding-001"
+        )
 
-if __name__ == "__main__":
-    generate_and_store_embeddings()
+        vector_store = Chroma(
+            embedding_function=embeddings,
+            persist_directory='rag_chroma_db',
+            collection_name='scholarship_info'
+        )
+        return vector_store.as_retriever()
+    
+
+#if __name__ == "__main__":
+   # generate_and_store_embeddings()
