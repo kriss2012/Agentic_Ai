@@ -228,3 +228,60 @@ pdf data : Title: Scholarship Information 2025
 - Book allowance of ₹3,000 per year
 5. How to Apply:
 Visit https://scholarships.gov.in and register under the NSP portal.
+
+
+RAG for developer portfolio
+
+Building a RAG-powered chatbot for your developer portfolio is a massive flex. It immediately shows recruiters and visitors that you don't just write code—you understand how to build and deploy modern AI architectures.
+
+Since this bot will be interacting with potential employers, clients, or other developers, it needs to be highly accurate, professional, and entirely focused on you and your work. It cannot hallucinate or get distracted by random internet questions.
+
+Here is the blueprint for adapting the RAG concept into a professional portfolio chatbot.
+
+1. Curate Your "Brain" (The Knowledge Base)
+Instead of feeding the system a generic PDF like the scholarship example, you need to build a custom knowledge base containing all your professional data. Create text or Markdown files for the following:
+
+The Master Resume: Education (like your BCA coursework and how it emphasizes professional software engineering practices), core skills (Python, React, Flask, C++), and contact info.
+
+Deep-Dive Project Readmes: This is where RAG shines. Create detailed documents for your major builds.
+
+For AI/ML work, detail the NLP models and backend logic used in systems like BhashaConvert or your Fake Review Detection system.
+
+For full-stack work, document the component structure and Tailwind CSS styling choices for things like your Telegram clone or LearnSphere.
+
+For game dev, break down the 3D logic and engine concepts you've explored.
+
+The "Why" and "How": Recruiters don't just care about the code; they care about the problem-solving. Write down the challenges you faced building platforms like EchoRepears or the AI Placement Coach and how you overcame them.
+
+2. Processing and Vector Storage
+The technical pipeline remains almost exactly the same as your previous script:
+
+Chunking: Use RecursiveCharacterTextSplitter to break your project docs and resume down into small, digestible paragraphs.
+
+Embeddings: Convert those chunks into vectors (using Google Generative AI embeddings or similar).
+
+Vector Database: Store them in a persistent Chroma DB.
+
+3. The "Strict Professional" System Prompt
+This is the most critical part of a public-facing portfolio bot. You must use a system prompt that gives the LLM a distinct persona and strict boundaries so visitors can't trick it into acting like a generic ChatGPT clone.
+
+When setting up your LangChain prompt template, use something like this:
+
+"You are the official AI portfolio assistant for Krishna. Your job is to answer questions from recruiters and visitors about Krishna's coding projects, software engineering skills, and education. You are professional, concise, and enthusiastic.
+
+Use ONLY the provided context to answer the question. If a visitor asks a coding question unrelated to Krishna's work, politely decline and steer the conversation back to Krishna's portfolio. If you do not know the answer based on the context, say: 'I don't have the specifics on that, but you can reach out to Krishna directly at [Email/LinkedIn]!'"
+
+4. The Frontend Experience
+Since you have solid experience with React and Tailwind CSS, you can build a sleek chat interface that sits in the corner of your portfolio site.
+
+Fast Responses: Use a fast, low-latency model (like Llama-3-8b via Groq, which you are already using) so the chat feels snappy to visitors.
+
+Guided Prompts: Don't just leave an empty text box. Give visitors clickable suggested questions to get them started, such as:
+
+"What is your tech stack?"
+
+"Tell me about your AI and NLP projects."
+
+"What are you currently studying?"
+
+By feeding the RAG pipeline your specific project architectures and academic background, you guarantee that when a recruiter asks, "What is your experience with React?", the bot won't give a generic definition of React. It will actually pull up the exact details of the web apps you've built.
