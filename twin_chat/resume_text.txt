@@ -14,6 +14,18 @@ iBase Electrosoft LLP (150 Hours – One Month)
 • Solved real-world problem statements using supervised learning techniques
 • Applied ML workflows including data preprocessing, model training, and evaluation
 • Demonstrated strong ownership, fast learning ability, and consistent task execution
+
+Currently i am doing an Backend Developement Intern at Apex Startup, Jalgaon (150 Hours – One Month)
+ Jalgaon-425001
+ MAY 2026 - PRESENT
+• Demonstrated strong ownership, fast learning ability, and consistent task execution
+• Am currenly working on backend web development using Django and Flask Framework
+• Am currenly working on database management using SQL and NoSQL databases
+• Am currenly working on API development using REST APIs
+• Am currenly working on authentication and authorization using JWT and OAuth
+• Am currenly working on deployment of web applications using Docker and Kubernetes
+
+
 Technical Skills
 Programming: Python, Java, C++
 W eb & Backend: Django, Flask, React, Node.js, REST APIs
