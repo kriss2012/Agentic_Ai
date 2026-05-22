@@ -37,7 +37,6 @@ def process_pdf(file_path: str):
     print(f'document has been split into: {len(splits)}chunks')
 
     return splits
-
 def generate_and_store_embeddings():
     splits = process_pdf("./scholarship_info.pdf")
 
@@ -53,40 +52,42 @@ def generate_and_store_embeddings():
 
     vector_store.add_documents(splits)
 
-    def create_retretriever():
-        embeddings = GoogleGenerativeAIEmbeddings(
-            model="models/gemini-embedding-001"
-        )
+# 1 & 2. FIXED: Moved outside the previous function and fixed the typo
+def create_retriever():
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/gemini-embedding-001"
+    )
 
-        vector_store = Chroma(
-            embedding_function=embeddings,
-            persist_directory='rag_chroma_db',
-            collection_name='scholarship_info'
-        )
-        return vector_store.as_retriever(search_kwargs={'k': 2})
+    vector_store = Chroma(
+        embedding_function=embeddings,
+        persist_directory='rag_chroma_db',
+        collection_name='scholarship_info'
+    )
+    return vector_store.as_retriever(search_kwargs={'k': 2})
     
 def get_llm(model="llama-3.1-8b-instant"):
-
     llm = ChatGroq(
         model=model,
         temperature=0.03,
         max_tokens=256
     )
-
     return llm
 
 def create_rag_chain(prompt:str):
     llm = get_llm()
-    retriever = create_retretriever()
+    retriever = create_retriever()
     
-    rag_chain = RetrieverQA.from_chain_type(
+    # 4. FIXED: Changed RetrieverQA to RetrievalQA
+    rag_chain = RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,
         return_source_documents=True,
     )
-
-    rag_chain.invoke({"query":prompt})
+    
+    response = rag_chain.invoke({"query": prompt})
     return response['result']
-create_rag_chain("What is the eligibility for this scholarship?")
+    
+print(create_rag_chain("What is the eligibility for this scholarship?"))
+
 #if __name__ == "__main__":
-   # generate_and_store_embeddings()
+#generate_and_store_embeddings()
