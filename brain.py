@@ -79,6 +79,12 @@ def create_rag_chain(prompt:str):
     llm = get_llm()
     retriever = create_retretriever()
     
-    rag
+    rag_chain = RetrieverQA.from_chain_type(
+        llm=llm,
+        retriever=retriever,
+        return_source_documents=True,
+    )
+
+    return rag_chain
 #if __name__ == "__main__":
    # generate_and_store_embeddings()
