@@ -5,6 +5,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
+from landchain_classic.chains import RetrieverQA
 
 load_dotenv()
 
@@ -73,5 +74,11 @@ def get_llm(model="llama-3.1-8b-instant"):
     )
 
     return llm
+
+def create_rag_chain(prompt:str):
+    llm = get_llm()
+    retriever = create_retretriever()
+    
+    rag
 #if __name__ == "__main__":
    # generate_and_store_embeddings()
