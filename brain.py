@@ -6,7 +6,8 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_classic.chains import RetrievalQA
-
+from langchain_community.tools import tool, DuckDuckGoSearchRun
+import requests
 load_dotenv()
 
 def run_llm(
@@ -85,9 +86,16 @@ def create_rag_chain(prompt:str):
     )
 
     response = rag_chain.invoke({"query": prompt})
-    return response
+    return response 
     
-print(create_rag_chain("What is the future scope of expected investment in scholarships? "))
+#print(create_rag_chain("What is the future scope of expected investment in scholarships? "))
 
-#if __name__ == "__main__":
-#generate_and_store_embeddings()
+@tool
+def get_weather(city:str) -> str:
+    """Get the current weather information for a specific city."""
+    api_key= os.getenv("WeatherStack_Api_Key")
+    url = f"http://api.weatherstack.com/current?access_key={api_key}&query={city}"
+    result = requests.get(url).json()
+    return str(result)
+
+print(get_weather.invoke("Pachora"))
