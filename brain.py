@@ -7,7 +7,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain_chroma import Chroma
 from langchain_classic.chains import RetrievalQA
 from langchain_community.tools import tool, DuckDuckGoSearchRun
-from langchain_classic.agents import create_agent
+from langchain.agents import create_agent
 from langsmith import Client
 import requests
 load_dotenv()
@@ -100,7 +100,7 @@ def get_weather(city:str) -> str:
     result = requests.get(url).json()
     return str(result)
 
-print(get_weather.invoke({"city":"Pachora"}))
+#print(get_weather.invoke({"city":"Pachora"}))
 
 
 def run_agent():
@@ -111,7 +111,8 @@ def run_agent():
 
     client = Client()
 
-    prompt = client.pull_prompt("hwchase17/react", dangeously_pull_public_prompt=True)
+    prompt = client.pull_prompt("hwchase17/react", 
+                                dangerously_pull_public_prompt=True)
     
     prompt = prompt.template
 
@@ -120,5 +121,9 @@ def run_agent():
         tools=tools,
         system_prompt=prompt,
     )
-    response = agent.invoke({"messages": [{"role":"user",content:"what is the current weather in pachora"}]})
-print(response)    
+    response = agent.invoke({"messages": [{"role":"user","content":"what is the current weather in pachora"}]})
+
+    print(response)    
+
+run_agent()
+# pip install ddgs
