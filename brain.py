@@ -49,8 +49,10 @@ def generate_and_store_embeddings():
         persist_directory='rag_chroma_db',
         collection_name='scholarship_info'
     )
-    vector_store.add_documents(splits)
-    def create_retriever():
+
+        vector_store.add_documents(splits)
+
+    def create_retretriever():
         embeddings = GoogleGenerativeAIEmbeddings(
             model="models/gemini-embedding-001"
         )
@@ -60,8 +62,16 @@ def generate_and_store_embeddings():
             persist_directory='rag_chroma_db',
             collection_name='scholarship_info'
         )
-        return vector_store.as_retriever()
+        return vector_store.as_retriever(search_kwargs={'k': 2})
     
+def get_llm(model="llama-3.1-8b-instant"):
 
+    llm = ChatGroq(
+        model=model,
+        temperature=0.03,
+        max_tokens=256
+    )
+
+return llm
 #if __name__ == "__main__":
    # generate_and_store_embeddings()
