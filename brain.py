@@ -99,3 +99,9 @@ def get_weather(city:str) -> str:
     return str(result)
 
 print(get_weather.invoke({"city":"Pachora"}))
+
+
+def run_agent():
+    llm = get_llm()
+    search_tool = DuckDuckGoSearchRun()
+    
