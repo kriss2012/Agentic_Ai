@@ -83,11 +83,11 @@ def create_rag_chain(prompt:str):
         retriever=retriever,
         return_source_documents=True,
     )
-    
+
     response = rag_chain.invoke({"query": prompt})
-    return response['result']
+    return response
     
-print(create_rag_chain("What is the eligibility for this scholarship?"))
+print(create_rag_chain("What is the future scope of expected investment in scholarships? "))
 
 #if __name__ == "__main__":
 #generate_and_store_embeddings()
