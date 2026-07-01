@@ -1,5 +1,6 @@
 .env
 .krish/
+Krish/
 __pycache__/
 rag_chroma_db/
 twin_chroma_db/
