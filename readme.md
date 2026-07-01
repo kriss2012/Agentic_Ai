@@ -297,3 +297,6 @@ By feeding the RAG pipeline your specific project architectures and academic bac
 answer of the agent responce given above:
 
 'weather_descriptions': ['Sunny'], 'astro': {'sunrise': '05:49 AM', 'sunset': '07:02 PM', 'moonrise': '11:17 AM', 'moonset': 'No moonset', 'moon_phase': 'Waxing Crescent', 'moon_illumination': ', tool_call_id='4wcf285dq', AIMessage(content='The current weather in Pachora is sunny with a temperature of 37 degrees Celsius.'),}
+
+
+pip install langchain==1.0.5 langchain-community==0.4.1 langchain-groq==1.0.0 langchain-google-genai==3.0.1 chromadb==1.3.4 pypdf python-dotenv
