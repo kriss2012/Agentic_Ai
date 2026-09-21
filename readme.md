@@ -300,3 +300,21 @@ answer of the agent responce given above:
 
 
 pip install langchain==1.0.5 langchain-community==0.4.1 langchain-groq==1.0.0 langchain-google-genai==3.0.1 chromadb==1.3.4 pypdf python-dotenv
+
+---
+
+## Security
+
+Please refer to [SECURITY.md](SECURITY.md) for vulnerability reporting guidelines.
+
+## Contributing
+
+Contributions are welcome! Please review [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and development process.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Developed and maintained by **[Krishna Patil](https://github.com/kriss2012)**.
